@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+source/CMakeFiles/aufgabe_1_3.dir/rule:
+	cd /home/ludwig/Schreibtisch/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_1_3.dir/rule
+.PHONY : source/CMakeFiles/aufgabe_1_3.dir/rule
+
+# Convenience name for target.
+aufgabe_1_3: source/CMakeFiles/aufgabe_1_3.dir/rule
+
+.PHONY : aufgabe_1_3
+
+# fast build rule for target.
+aufgabe_1_3/fast:
+	cd /home/ludwig/Schreibtisch/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/aufgabe_1_3.dir/build.make source/CMakeFiles/aufgabe_1_3.dir/build
+.PHONY : aufgabe_1_3/fast
+
+# Convenience name for target.
 source/CMakeFiles/helloworld.dir/rule:
 	cd /home/ludwig/Schreibtisch/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/helloworld.dir/rule
 .PHONY : source/CMakeFiles/helloworld.dir/rule
@@ -139,6 +154,33 @@ tests: source/CMakeFiles/tests.dir/rule
 tests/fast:
 	cd /home/ludwig/Schreibtisch/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
+
+aufgabe_1_3.o: aufgabe_1_3.cpp.o
+
+.PHONY : aufgabe_1_3.o
+
+# target to build an object file
+aufgabe_1_3.cpp.o:
+	cd /home/ludwig/Schreibtisch/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/aufgabe_1_3.dir/build.make source/CMakeFiles/aufgabe_1_3.dir/aufgabe_1_3.cpp.o
+.PHONY : aufgabe_1_3.cpp.o
+
+aufgabe_1_3.i: aufgabe_1_3.cpp.i
+
+.PHONY : aufgabe_1_3.i
+
+# target to preprocess a source file
+aufgabe_1_3.cpp.i:
+	cd /home/ludwig/Schreibtisch/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/aufgabe_1_3.dir/build.make source/CMakeFiles/aufgabe_1_3.dir/aufgabe_1_3.cpp.i
+.PHONY : aufgabe_1_3.cpp.i
+
+aufgabe_1_3.s: aufgabe_1_3.cpp.s
+
+.PHONY : aufgabe_1_3.s
+
+# target to generate assembly for a file
+aufgabe_1_3.cpp.s:
+	cd /home/ludwig/Schreibtisch/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/aufgabe_1_3.dir/build.make source/CMakeFiles/aufgabe_1_3.dir/aufgabe_1_3.cpp.s
+.PHONY : aufgabe_1_3.cpp.s
 
 helloworld.o: helloworld.cpp.o
 
@@ -202,8 +244,12 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... aufgabe_1_3"
 	@echo "... helloworld"
 	@echo "... tests"
+	@echo "... aufgabe_1_3.o"
+	@echo "... aufgabe_1_3.i"
+	@echo "... aufgabe_1_3.s"
 	@echo "... helloworld.o"
 	@echo "... helloworld.i"
 	@echo "... helloworld.s"
