@@ -236,7 +236,19 @@ iomanip
 assert.h
 -
 
+/home/ludwig/Schreibtisch/Programmiersprachen/programmiersprachen-aufgabe-1/source/aufgabe_1_3.cpp
+iostream
+-
+math.h
+-
+array
+-
+
 /home/ludwig/Schreibtisch/Programmiersprachen/programmiersprachen-aufgabe-1/source/tests.cpp
 catch.hpp
 -
+cmath
+-
+aufgabe_1_3.cpp
+/home/ludwig/Schreibtisch/Programmiersprachen/programmiersprachen-aufgabe-1/source/aufgabe_1_3.cpp
 
