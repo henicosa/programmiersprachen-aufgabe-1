@@ -1,8 +1,17 @@
 #include <iostream> // Ein - / Ausgabe
 #include <math.h>   //Wurzelfunktion
 #include <array>
+#include <cmath>
 // C ++ Programme beginnen mit der Ausfuehrung
 // der Funktion main
+
+double volumeCylinder(double radius, double height) {
+    return M_PI*radius*radius*height;
+}
+
+double surfaceCylinder(double radius, double height) {
+    return 2*M_PI*radius*radius + 2*M_PI*radius*height;
+}
 
 //Übung Übungsblatt
 int ggT(int a,int b){
@@ -35,6 +44,12 @@ int sum_multiples(int bound) {
     }
     return sum;
 };
+
+double fract(double number) {
+
+    return number - int(number);
+
+}
 
 int leastCommon(double a) {
     int number = 3;
@@ -93,6 +108,9 @@ int binomial(int a, int ueber_b);
 void print_100_primes();
 
 bool is_prime(int zahl) {
+    if (zahl <= 1) {
+        return false;
+    }
     int divisor = 2;
     while(divisor <= sqrt(zahl)) {
         if(zahl % divisor == 0) {
@@ -104,7 +122,7 @@ bool is_prime(int zahl) {
 };
 
 long factorial(int zahl) {
-    if (zahl == 0) {
+    if (zahl <= 0) {
         return 1;
     }
     else
